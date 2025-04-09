@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #FBCED8; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #ff5c92; 
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    box-shadow: 0px 4px 6px rgb(247, 245, 245);
+    margin-bottom: 10px;
+}
+
+
+.logo img {
+    width: 360px; 
+    margin-bottom: 10px;
+}
+
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    gap: 5px;
+    position: relative;
+}
+
+.box {
+    background-color: #FFB2D1; 
+    border: 2px solid #e7063b; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #ff547c; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px; 
+}
+
+.box:hover {
+    background-color: #f7076b; 
+}
+
+
+.line {
+    position: absolute;
+    background-color: #ff0066; 
+    display: none; 
+    transition: height 0.5s ease, width 0.5s ease; 
+    border-radius: 5px;
+}
+
+
+#winning-line {
+    position: absolute;
+    height: 4px;
+    background-color: red;
+    z-index: 10;
+    display: none; 
+}
+
+.gameinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    color: #f80840;
+}
+
+
+.welcome {
+    font-size: 2rem;
+    margin-bottom: 20px; 
+    color: #FF1493; 
+}
+
+
+.info {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FF1493;
+}
+
+button {
+    background-color: #e9083d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f10181; 
+}
+
+.img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#excited {
+    width: 150px;
+    height: auto;
+    display: none;
+}
